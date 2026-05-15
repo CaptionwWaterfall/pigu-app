@@ -1,0 +1,57 @@
+/* Daoist Yin-Yang / Tai Chi styles */
+
+.taichi-logo {
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(to left, #1a1a1a 50%, #f5f5f5 50%);
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: spin 10s linear infinite;
+}
+
+.taichi-logo::before,
+.taichi-logo::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    left: 25%;
+}
+
+.taichi-logo::before {
+    top: 0;
+    background-color: #1a1a1a;
+    border: 12px solid #f5f5f5;
+    box-sizing: border-box;
+}
+
+.taichi-logo::after {
+    bottom: 0;
+    background-color: #f5f5f5;
+    border: 12px solid #1a1a1a;
+    box-sizing: border-box;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Subtle breathing animation for timer when active */
+.breathing {
+    animation: breath 4s ease-in-out infinite;
+}
+
+@keyframes breath {
+    0% { box-shadow: 0 0 0px rgba(0,0,0,0.1); }
+    50% { box-shadow: 0 0 20px rgba(0,0,0,0.3); }
+    100% { box-shadow: 0 0 0px rgba(0,0,0,0.1); }
+}
+
+/* Base resets and smooth fonts */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(circle at center, #ffffff 0%, #f0f0f0 100%);
+}

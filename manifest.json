@@ -1,0 +1,17 @@
+{
+  "name": "辟谷修行",
+  "short_name": "辟谷",
+  "description": "道家阴阳风格辟谷断食记录",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
