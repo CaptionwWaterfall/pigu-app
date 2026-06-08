@@ -98,13 +98,10 @@
 
         <!-- Daily Reflection Section -->
         <section class="w-full bg-white rounded-3xl shadow-xl p-6 flex flex-col border border-gray-100">
-            <div class="flex justify-between items-center border-b pb-2 mb-4">
-                <h3 class="text-xl tracking-wider text-gray-500">每日反思</h3>
-                <button id="ai-chat-btn" class="text-sm px-4 py-1.5 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition shadow">深度交流</button>
-            </div>
+            <h3 class="text-xl mb-4 tracking-wider text-gray-500 border-b pb-2">每日反思</h3>
             
             <div class="flex flex-col gap-4 mb-6 mt-2">
-                <textarea id="reflection-input" rows="3" placeholder="今天修行感觉怎么样呀？写下来吧..." class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-400 resize-none"></textarea>
+                <textarea id="reflection-input" rows="3" placeholder="今日修行如何？写下你的感悟..." class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-daoBlack resize-none"></textarea>
                 <button id="record-reflection-btn" class="px-6 py-2 bg-daoBlack text-daoWhite rounded-lg hover:bg-gray-800 transition self-end">记录感悟</button>
             </div>
 
@@ -137,31 +134,6 @@
         </div>
     </div>
 
-    <!-- AI Chat Modal -->
-    <div id="ai-chat-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center z-50 p-4">
-        <div class="bg-white rounded-2xl w-full max-w-lg h-[80vh] flex flex-col shadow-2xl overflow-hidden border-2 border-indigo-200">
-            <div class="p-4 border-b bg-indigo-50 flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></div>
-                    <h3 class="text-lg font-bold text-indigo-700">知心伴侣 (INFJ)</h3>
-                </div>
-                <button id="close-chat-btn" class="text-gray-400 hover:text-indigo-600 text-xl">&times;</button>
-            </div>
-            
-            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto flex flex-col gap-4 bg-gray-50">
-                <!-- Messages will appear here -->
-            </div>
-            
-            <div class="p-4 border-t bg-white flex gap-2">
-                <input type="text" id="chat-input" placeholder="与我分享你的感受吧..." class="flex-1 px-4 py-2 bg-gray-50 border border-gray-300 rounded-full focus:outline-none focus:border-indigo-400 text-sm transition">
-                <button id="send-chat-btn" class="w-10 h-10 bg-indigo-500 text-white rounded-full flex justify-center items-center hover:bg-indigo-600 transition shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
